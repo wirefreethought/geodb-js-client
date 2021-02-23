@@ -1,0 +1,32 @@
+{
+  "name": "wft-geodb-js-client",
+  "version": "1.4.0",
+  "description": "Provides Javascript client bindings to the GeoDB service.",
+  "keywords": [
+    "geodb",
+    "location",
+    "localization",
+    "javascript client"
+  ],
+  "author": {
+    "name": "Michael Mogley",
+    "email": "mmogley@wirefreethought.com",
+    "url": "http://wirefreethought.com"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "4.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~6.0.2",
+    "sinon": "7.2.7",
+    "expect.js": "~0.3.1"
+  }
+}

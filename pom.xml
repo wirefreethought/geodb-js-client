@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd
+  ">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.wirefreethought.geodb</groupId>
+  <artifactId>geodb-js-client</artifactId>
+  <version>1.4.0</version>
+
+  <name>GeoDB Javascript Client</name>
+  <description>This library provides Javascript client bindings to the GeoDB service.</description>
+  <url>https://github.com/wirefreethought/geo-db-js-client</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>Wirefree Thought LLC</name>
+    <url>http://wirefreethought.com</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>mmogley</id>
+      <name>Michael Mogley</name>
+      <email>mmogley@wirefreethought.com</email>
+      <organization>Wirefree Thought LLC</organization>
+      <organizationUrl>http://wirefreethought.com</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/wirefreethought/geodb-js-client</url>
+    <connection>scm:git:git@github.com:wirefreethought/geodb-js-client.git</connection>
+    <developerConnection>scm:git:git@github.com:wirefreethought/geodb-js-client.git</developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <finalName>wft-geodb-js-client</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-codegen-maven-plugin</artifactId>
+        <version>2.4.5</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <inputSpec>swagger.json</inputSpec>
+
+              <language>javascript</language>
+
+              <configOptions>
+                <projectName>wft-geodb-js-client</projectName>
+                <projectDescription>Provides Javascript client bindings to the GeoDB service.</projectDescription>
+                <projectVersion>${project.version}</projectVersion>
+                <moduleName>GeoDb</moduleName>
+                <sourceFolder>lib</sourceFolder>
+                <usePromises>true</usePromises>
+              </configOptions>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
