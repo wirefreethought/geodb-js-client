@@ -10,7 +10,7 @@
     }
   },
   "host": "wft-geo-db.p.rapidapi.com",
-  "basePath": "/v1",
+  "basePath": "",
   "schemes": [
     "https"
   ],
@@ -40,7 +40,7 @@
     }
   ],
   "paths": {
-    "/geo/adminDivisions": {
+    "/v1/geo/adminDivisions": {
       "get": {
         "tags": [
           "Geo"
@@ -120,7 +120,7 @@
         }
       }
     },
-    "/geo/adminDivisions/{divisionId}/nearbyDivisions": {
+    "/v1/geo/adminDivisions/{divisionId}/nearbyDivisions": {
       "get": {
         "tags": [
           "Geo"
@@ -203,7 +203,7 @@
         }
       }
     },
-    "/geo/adminDivisions/{divisionId}/nearbyCities": {
+    "/v1/geo/adminDivisions/{divisionId}/nearbyCities": {
       "get": {
         "tags": [
           "Geo"
@@ -289,7 +289,7 @@
         }
       }
     },
-    "/geo/cities": {
+    "/v1/geo/cities": {
       "get": {
         "tags": [
           "Geo"
@@ -372,7 +372,7 @@
         }
       }
     },
-    "/geo/cities/{cityId}/nearbyCities": {
+    "/v1/geo/cities/{cityId}/nearbyCities": {
       "get": {
         "tags": [
           "Geo"
@@ -458,7 +458,7 @@
         }
       }
     },
-    "/geo/locations/{locationId}/nearbyDivisions": {
+    "/v1/geo/locations/{locationId}/nearbyDivisions": {
       "get": {
         "tags": [
           "Geo"
@@ -538,7 +538,7 @@
         }
       }
     },
-    "/geo/locations/{locationId}/nearbyCities": {
+    "/v1/geo/locations/{locationId}/nearbyCities": {
       "get": {
         "tags": [
           "Geo"
@@ -621,7 +621,7 @@
         }
       }
     },
-    "/geo/adminDivisions/{divisionId}": {
+    "/v1/geo/adminDivisions/{divisionId}": {
       "get": {
         "tags": [
           "Geo"
@@ -665,7 +665,7 @@
         }
       }
     },
-    "/geo/cities/{cityId}": {
+    "/v1/geo/cities/{cityId}": {
       "get": {
         "tags": [
           "Geo"
@@ -709,7 +709,7 @@
         }
       }
     },
-    "/geo/cities/{cityId}/distance": {
+    "/v1/geo/cities/{cityId}/distance": {
       "get": {
         "tags": [
           "Geo"
@@ -753,7 +753,7 @@
         }
       }
     },
-    "/geo/cities/{cityId}/dateTime": {
+    "/v1/geo/cities/{cityId}/dateTime": {
       "get": {
         "tags": [
           "Geo"
@@ -791,7 +791,7 @@
         }
       }
     },
-    "/geo/cities/{cityId}/locatedIn": {
+    "/v1/geo/cities/{cityId}/locatedIn": {
       "get": {
         "tags": [
           "Geo"
@@ -835,7 +835,7 @@
         }
       }
     },
-    "/geo/cities/{cityId}/time": {
+    "/v1/geo/cities/{cityId}/time": {
       "get": {
         "tags": [
           "Geo"
@@ -873,7 +873,7 @@
         }
       }
     },
-    "/geo/countries": {
+    "/v1/geo/countries": {
       "get": {
         "tags": [
           "Geo"
@@ -926,7 +926,7 @@
         }
       }
     },
-    "/geo/countries/{countryId}": {
+    "/v1/geo/countries/{countryId}": {
       "get": {
         "tags": [
           "Geo"
@@ -970,7 +970,7 @@
         }
       }
     },
-    "/geo/countries/{countryId}/regions": {
+    "/v1/geo/countries/{countryId}/regions": {
       "get": {
         "tags": [
           "Geo"
@@ -1026,7 +1026,7 @@
         }
       }
     },
-    "/geo/countries/{countryId}/regions/{regionCode}": {
+    "/v1/geo/countries/{countryId}/regions/{regionCode}": {
       "get": {
         "tags": [
           "Geo"
@@ -1073,7 +1073,7 @@
         }
       }
     },
-    "/geo/countries/{countryId}/regions/{regionCode}/adminDivisions": {
+    "/v1/geo/countries/{countryId}/regions/{regionCode}/adminDivisions": {
       "get": {
         "tags": [
           "Geo"
@@ -1147,7 +1147,7 @@
         }
       }
     },
-    "/geo/countries/{countryId}/regions/{regionCode}/cities": {
+    "/v1/geo/countries/{countryId}/regions/{regionCode}/cities": {
       "get": {
         "tags": [
           "Geo"
@@ -1224,7 +1224,7 @@
         }
       }
     },
-    "/locale/currencies": {
+    "/v1/locale/currencies": {
       "get": {
         "tags": [
           "Locale"
@@ -1268,7 +1268,7 @@
         }
       }
     },
-    "/locale/languages": {
+    "/v1/locale/languages": {
       "get": {
         "tags": [
           "Locale"
@@ -1309,7 +1309,7 @@
         }
       }
     },
-    "/locale/locales": {
+    "/v1/locale/locales": {
       "get": {
         "tags": [
           "Locale"
@@ -1350,7 +1350,7 @@
         }
       }
     },
-    "/locale/timezones": {
+    "/v1/locale/timezones": {
       "get": {
         "tags": [
           "Locale"
@@ -1391,7 +1391,7 @@
         }
       }
     },
-    "/locale/timezones/{zoneId}/dateTime": {
+    "/v1/locale/timezones/{zoneId}/dateTime": {
       "get": {
         "tags": [
           "Locale"
@@ -1429,7 +1429,7 @@
         }
       }
     },
-    "/locale/timezones/{zoneId}/time": {
+    "/v1/locale/timezones/{zoneId}/time": {
       "get": {
         "tags": [
           "Locale"

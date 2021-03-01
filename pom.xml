@@ -6,6 +6,7 @@
 
   <groupId>com.wirefreethought.geodb</groupId>
   <artifactId>geodb-js-client</artifactId>
+
   <version>1.4.3</version>
 
   <name>GeoDB Javascript Client</name>

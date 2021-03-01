@@ -17,19 +17,19 @@ npm install wft-geodb-js-client --save
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var GeoDb = require('wft-geodb-js-client');
+var GeoDb = require('wft-geodb-js-client/lib');
 
 var defaultClient = GeoDb.ApiClient.instance;
 
 /*
- * Free Service: Uncomment below 
+ * Free Service: Uncomment below
  */
 // defaultClient.basePath = 'http://geodb-free-service.wirefreethought.com';
 
-/* 
- * Pro Service: Uncomment below 
+/*
+ * Pro Service: Uncomment below
  */
 // Configure API key authorization: UserSecurity
 //var UserSecurity = defaultClient.authentications['UserSecurity'];
 //UserSecurity.apiKey = "YOUR API KEY"
-//UserSecurity.apiKeyPrefix['X-Mashape-Key'] = "Token"
+//UserSecurity.apiKeyPrefix['x-rapidapi-key'] = "Token"
