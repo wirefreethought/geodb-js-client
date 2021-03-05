@@ -1,6 +1,6 @@
 {
   "name": "wft-geodb-js-client",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Provides Javascript client bindings to the GeoDB service.",
   "keywords": [
     "geodb",
