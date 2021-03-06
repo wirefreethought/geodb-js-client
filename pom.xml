@@ -7,7 +7,7 @@
   <groupId>com.wirefreethought.geodb</groupId>
   <artifactId>geodb-js-client</artifactId>
 
-  <version>1.4.5</version>
+  <version>1.4.6</version>
 
   <name>GeoDB Javascript Client</name>
   <description>This library provides Javascript client bindings to the GeoDB service.</description>
@@ -82,6 +82,7 @@
                 <moduleName>GeoDb</moduleName>
                 <sourceFolder>lib</sourceFolder>
                 <usePromises>true</usePromises>
+                <useES6>true</useES6>
               </configOptions>
             </configuration>
           </execution>
